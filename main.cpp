@@ -16,7 +16,7 @@ bool checkArgs(int argc, char** argv)
 struct concatDescriptor
 {
 	const std::string exeFile;
-	const std::string zipfile;
+	const std::string zipFile;
 };
 
 concatDescriptor getPaths(char** args) { return { args[1], args[2] }; }
@@ -34,8 +34,8 @@ void concat(concatDescriptor inputs, const std::string& outputName)
 	auto exeBinaryFile = std::ifstream(inputs.exeFile, std::ios::binary);
 	if(!exeBinaryFile) throw std::runtime_error("couldn't open " + inputs.exeFile);
 
-	auto zipBinaryFile = std::ifstream(inputs.zipfile, std::ios::binary);
-	if(!zipBinaryFile) throw std::runtime_error("couldn't open " + inputs.zipfile);
+	auto zipBinaryFile = std::ifstream(inputs.zipFile, std::ios::binary);
+	if(!zipBinaryFile) throw std::runtime_error("couldn't open " + inputs.zipFile);
 
 	auto outputBinaryFile = std::ofstream(outputName, std::ios::binary);
 	if(!outputBinaryFile) throw std::runtime_error("couldn't open for writing " + outputName);
