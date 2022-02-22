@@ -1,10 +1,6 @@
 # zipconcat
 CLI Tool to append a zip archive to an executable (or anything really...)
 
-This program only depend on the C++ standard library, and should build as is on
-any platform that have a mordern enough compiler to understand 
-'const auto X = []{return Y;}()' (should be C++14)
-
 ## Usage
 
   $ zipconcat /path/to/exeutable/ /path/to/zip/archive.zip
