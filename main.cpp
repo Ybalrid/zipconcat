@@ -52,11 +52,15 @@ int usage()
 	std::cout << "USAGE:\n"
 			  << "  -  zipconcat <path to exe file> <path to zip file>\n";
 
-	return EXIT_SUCCESS;
+	return EXIT_FAILURE;
 }
+
+void banner() { std::cout << "zipconcat (c) 2018-2022 Arthur Brainville (Ybalrid)\n" << std::endl; }
 
 int main(int argc, char** argv)
 {
+	banner();
+
 	if(!checkArgs(argc, argv)) return usage();
 	const auto paths = getPaths(argv);
 
