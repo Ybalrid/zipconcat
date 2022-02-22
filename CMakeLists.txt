@@ -4,4 +4,4 @@ set(CMAKE_CXX_STANDARD 17)
 
 project(zipconcat)
 
-add_executable(zipconcat main.cpp)
+add_executable(zipconcat main.cpp README.md)

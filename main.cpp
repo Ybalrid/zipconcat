@@ -55,7 +55,7 @@ int usage()
 	return EXIT_FAILURE;
 }
 
-void banner() { std::cout << "zipconcat (c) 2018-2022 Arthur Brainville (Ybalrid)\n" << std::endl; }
+void banner() { std::cout << "zipconcat (c) 2018-2022 Arthur Brainville (Ybalrid)" << std::endl; }
 
 int main(int argc, char** argv)
 {
